@@ -6,6 +6,8 @@ var cors = require('cors');
 const noticiasRoutes = require("./routes/noticiasRoutes")
 const usuariosRoutes = require("./routes/usuariosRoutes")
 const cursosRoutes = require("./routes/cursosRoutes")
+const comentariosRoutes = require("./routes/comentariosRoutes")
+const midiasRoutes = require("./routes/midiasRoutes")
 
 
 // const Noticia = require('./models/Noticia')
@@ -24,6 +26,8 @@ app.use(
 app.use('/noticias', noticiasRoutes )
 app.use('/usuarios', usuariosRoutes )
 app.use("/cursos", cursosRoutes)
+app.use("/comentarios", comentariosRoutes)
+app.use("/midias", midiasRoutes)
 
 mongoose.connect('mongodb+srv://admin:naruto666@Cluster0.26yxz.mongodb.net/Cluster0?retryWrites=true&w=majority')
 .then(()=>{
