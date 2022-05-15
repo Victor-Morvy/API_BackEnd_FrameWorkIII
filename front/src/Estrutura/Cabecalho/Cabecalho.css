@@ -1,0 +1,113 @@
+#cabecalho {
+	background-color:black;
+	color:white;
+	padding:15px;
+}
+
+#linktopo
+{
+	color: white;
+	text-decoration: none;
+}
+
+ /* Grid do cabeçalho para alinhar os itens */
+ .grid-container {
+	display: grid;
+	grid-template-columns: 1% 67% 30% auto;
+}
+
+
+
+/* icones */
+i{
+	color: rgb(255, 255, 255);
+}
+
+i:hover {
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+
+}
+
+.btn {
+	
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: .15s;
+	background: border-box;
+
+}
+
+.btn.inline {
+    display: inline;
+    width: auto;
+}
+
+
+
+.menu1{
+	list-style:none;  /* tira o bullet */
+	font-size: 20px;
+
+}
+
+/* pega os itens de UL */
+.menu1 ul li{
+	position:relative;   /* faz os elementos filhos ficarem posicionados com base no elemento pai */
+	color: rgb(0, 0, 0);
+	background: rgb(255, 255, 255);
+
+}
+
+
+/* pega os links dentro dos itens quando o mouse passa por cima */
+.menu1 ul li:hover{
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+
+}
+
+/* pega a lista dentro da lista */
+.menu1 li ul{
+	position:absolute; /* posição absoluta, para ele "flutuar" */
+	display:none; /* esconde subitens para só aparecer no hover */
+}  
+
+/* pega as listas "filhas" dos itens com o mouse */
+.menu1 li:hover ul {
+	display:block; /* mostra na tela */
+}
+
+/* pega itens da lista filha */
+.menu1 li ul li {
+	display:block;
+	width:200px;
+	border:1px solid #c0c0c0;
+    height: 34px;
+
+
+}
+
+/* acerta espaçamento do menu e dos submenus */
+.menu1 {margin: 0; padding: 0;}
+.menu1 ul {margin: 0; padding: 0; z-index: 1000;}
+
+
+#divBusca{
+    background-color:#000000;
+    border:solid 1px;
+    width:300px;
+    height: 29px;
+  }
+  
+  #txtBusca{
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    height:26px;
+    width:260px;
+	color: white;
+  }

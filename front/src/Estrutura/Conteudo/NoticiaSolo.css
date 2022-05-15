@@ -1,0 +1,47 @@
+.Colorletters {
+    color: white;
+    padding: 20px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10px;
+}
+
+.grid-item2 {
+    padding: 20px;
+    font-size: 15px;
+}
+
+
+
+p{
+    float: left;
+}
+h2{ 
+    float: right;
+}
+#Comentarios{
+    border: solid;
+    color: white;
+}
+#txtBuscas{
+    width: 80%;
+    height: 34px;
+    background-color: black;
+    border: solid;
+    border-color: white;
+    color: white;
+
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: solid 1px;
+    width: AUTO;
+    height: 37px;
+    margin: 10px;
+    font-size: 22px;
+}
